@@ -1,0 +1,19 @@
+/**
+ * 全局样式入口
+ * 引入 Tailwind CSS 基础层
+ */
+@import "tailwindcss";
+
+/* 自定义全局样式 */
+
+/* 隐藏分类标签横向滚动条 */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* 暗黑模式选择器 - Tailwind v4 配置 */
+@custom-variant dark (&:where(.dark, .dark *));
